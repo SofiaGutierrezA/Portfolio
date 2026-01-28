@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo"><span>Sofía</span></div>
+            <nav class="main-nav">
+                <a href="#home">Inicio</a>
+                <a href="#about">Sobre mí</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="section hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>Hola, soy <span>Sofía Gutiérrez</span></h1>
+                <p class="subtitle">
+                    A <strong>Desarrolladora web</strong> passionate about building clean, modern,
+                    and responsive web experiences.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn primary">Contáctame</a>
+                    <a href="#projects" class="btn ghost">Mis proyectos</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="hero-image.png" alt="Hero Image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <header class="section-header">
+                <h2>Sobre mí</h2>
+            </header>
+            <div class="about">
+                <div class="about-text">
+                    <p>
+                        I'm a web developer focused on crafting beautiful and user-friendly interfaces.
+                        I enjoy turning complex problems into simple, elegant solutions.
+                    </p>
+                    <p>
+                        My main stack includes <strong>HTML</strong>, <strong>CSS</strong>, and
+                        <strong>JavaScript</strong>, and I'm always learning new tools and technologies
+                        to improve my work.
+                    </p>
+                </div>
+            </div>
+            <div class="skills">
+            <h2>Habilidades</h2>
+            <div class="about-skills">
+                    <article class="skills-card">
+                    <h3>Front-end</h3>
+                    <!-- Add icons -->
+                    <i class="devicon-html5-plain-wordmark colored tech-icon"></i>         
+                    <i class="devicon-javascript-plain colored tech-icon"></i>
+                    <i class="devicon-css3-plain-wordmark colored tech-icon"></i>
+                    <i class="devicon-react-original-wordmark colored tech-icon"></i>           
+                </article>
+                <article class="skills-card">
+                    <h3>Back-end</h3>
+                    <i class="devicon-java-plain-wordmark colored tech-icon"></i>
+                    <i class="devicon-sqldeveloper-plain colored tech-icon"></i>
+                    <i class="devicon-mysql-plain-wordmark tech-icon"></i>
+                    <i class="devicon-github-original-wordmark tech-icon"></i>
+                    <i class="devicon-python-plain-wordmark colored tech-icon"></i>
+                </article>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <header class="section-header">
+                <h2>Proyectos</h2>
+            </header>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Project One</h3>
+                    <p>
+                        A short description of your project. Explain what you built and which
+                        technologies you used.
+                    </p>
+                    <!-- Add icons -->
+                    <p class="project-tags">HTML · CSS · JavaScript</p>   
+                    <a href="https://github.com/SofiaGutierrezA" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+                </article>
+                <article class="project-card">
+                    <h3>Project Two</h3>
+                    <p>
+                        A short description of your project. Highlight the main features or challenges solved.
+                    </p>
+                    <p class="project-tags">Responsive Design</p>
+                    <a href="https://github.com/SofiaGutierrezA" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+                </article>
+                <article class="project-card">
+                    <h3>Project Three</h3>
+                    <p>
+                        A short description of your project. You can link to the live site or GitHub repo.
+                    </p>
+                    <p class="project-tags">UI / UX</p>
+                    <a href="https://github.com/SofiaGutierrezA" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <header class="section-header">
+                <h2>Contacto</h2>
+            </header>
+            <div class="contact-grid">
+                <div class="contact-text">
+                    <p>
+                        Feel free to reach out if you have a project in mind, want to collaborate,
+                        or just say hello.
+                    </p>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> your.email@example.com</li>
+                        <li><strong>Ubicación:</strong> España</li>
+                    </ul>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input id="name" type="text" placeholder="Tu nombre" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="email@ejemplo.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary full-width">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for older browsers that don't support CSS scroll-behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                const targetId = this.getAttribute("href");
+                if (!targetId || targetId === "#") return;
+                const target = document.querySelector(targetId);
+                if (!target) return;
+                e.preventDefault();
+                target.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        // Mobile nav toggle
+        const navToggle = document.querySelector(".nav-toggle");
+        const nav = document.querySelector(".main-nav");
+        navToggle.addEventListener("click", () => {
+            nav.classList.toggle("open");
+            navToggle.classList.toggle("open");
+        });
+
+        // Set current year in footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
