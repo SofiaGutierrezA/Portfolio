@@ -131,6 +131,7 @@ body {
     min-height: calc(100vh - 60px);
     display: flex;
     align-items: center;
+    text-align: justify;
 }
 
 .hero-inner {
@@ -218,6 +219,7 @@ body {
     display: flex;
     align-items: center;    
     justify-content: center;
+    text-align: justify;
     gap: 2.5rem;
     margin-left: 4rem;
     margin-right: 4rem;
@@ -225,6 +227,7 @@ body {
 
 .about-text p + p {
     margin-top: 1rem;
+    text-align: justify;
 }
 
 .skills h2 {
@@ -291,6 +294,7 @@ body {
     border-radius: 1.1rem;
     background: rgba(1, 13, 33, 0.9);
     border: 2px solid rgba(106, 237, 249, 0.4);
+    text-align: justify;
 }
 
 .project-card:hover {
