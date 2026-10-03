@@ -144,7 +144,8 @@ body {
 .hero-text h1 {
     font-size: clamp(2.2rem, 4vw, 3rem);
     line-height: 1.1;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
+    
 }
 
 .hero-text h1 span {
@@ -172,6 +173,27 @@ body {
     gap: 0.9rem;
 }
 
+.hero-image {
+    width: 100%;
+
+
+}
+.hero p {
+    
+    margin-bottom: 2rem;
+}
+.typing-text {
+    display: inline-block;
+    border-right: 2px solid;
+    padding-right: 4px;
+    animation: blink 0.99s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 .btn {
     display: inline-flex;
     align-items: center;
@@ -182,6 +204,7 @@ body {
     font-size: 0.95rem;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 0.5rem;
     transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 
@@ -286,6 +309,7 @@ body {
     font-size: 0.85rem;
     color: #ffffff;
     text-decoration: none;
+    margin-right: 2rem;
     
 }
 
@@ -295,6 +319,7 @@ body {
     background: rgba(1, 13, 33, 0.9);
     border: 2px solid rgba(106, 237, 249, 0.4);
     text-align: justify;
+    margin-bottom: 1.5rem;
 }
 
 .project-card:hover {
@@ -457,4 +482,15 @@ body {
     .contact-form {
         padding: 1.2rem 1.2rem;
     }
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
 }

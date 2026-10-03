@@ -16,7 +16,7 @@
     <!-- Header / Navigation -->
     <header class="site-header">
         <div class="container header-inner">
-            <div class="logo"><span>Sofía</span></div>
+            <div class="logo"><span>SG</span></div>
             <nav class="main-nav">
                 <a href="#home">Inicio</a>
                 <a href="#about">Sobre mí</a>
@@ -36,22 +36,24 @@
         <div class="container hero-inner">
             <div class="hero-text">
                 <h1>Hola, soy <span>Sofía Gutiérrez</span></h1>
+                
                 <p class="subtitle">
-                    <strong>Desarrolladora web</strong> junior con perfil full-stack y especial interés en backend. 
-                    Trabajo tanto en la lógica de servidor como en interfaces de usuario, utilizando Java, JavaScript, HTML y CSS. 
-                    He desarrollado proyectos donde conecto frontend y backend, gestionando datos y estructura de la aplicación.
+                   <h2 class="typing-text"></h2>
                 </p>
                 <div class="hero-actions">
                     <a href="#contact" class="btn primary">Contáctame</a>
                     <a href="#projects" class="btn ghost">Mis proyectos</a>
                 </div>
+                
             </div>
-
+            <div>
+                <img src="assets/hero-image.png" alt="Hero image" class="hero-image" />
+               </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about">
+    <section id="about" class="section scroll-animation" >
         <div class="container">
             <header class="section-header">
                 <h2>Sobre mí</h2>
@@ -59,18 +61,20 @@
             <div class="about">
                 <div class="about-text">
                     <p>
-                        Soy Sofía Gutiérrez, una desarrolladora web junior con un enfoque full-stack y una pasión especial por el backend. 
-                        Me encanta trabajar tanto en la lógica de servidor como en la creación de interfaces de usuario, utilizando tecnologías como
-                         Java, JavaScript, HTML y CSS. He tenido la oportunidad de desarrollar proyectos donde he conectado el frontend con el backend,
-                          gestionando datos y estructurando aplicaciones completas. Además, cuento con conocimientos en sistemas y entornos técnicos, 
-                          lo que me permite entender mejor el funcionamiento y despliegue de las aplicaciones.
+                        Soy Sofía Gutiérrez, estudiante de CFGS Desarrollo de Aplicaciones Web, con formación en 
+                        desarrollo full-stack y especial interés en el desarrollo backend.</p>
+                    <p>       
+                        Trabajo con tecnologías como Java, JavaScript, HTML y CSS. He desarrollado proyectos en los que he conectado frontend y backend, 
+                        gestionado datos y estructurado aplicaciones completas. También cuento con conocimientos en sistemas y entornos técnicos, que me permiten comprender mejor el funcionamiento y el despliegue de las aplicaciones.
                     </p>
-                    <p>
-                        Estoy aprendiendo nuevas tecnologías y herramientas para mejorar mis habilidades y ofrecer soluciones eficientes.
-                    </p>
+                    <p>   
+                        Actualmente continúo ampliando mis conocimientos y trabajando con nuevas tecnologías y 
+                        herramientas para mejorar mis habilidades y desarrollar soluciones eficientes. Busco encontrar prácticas profesionales para aprender y crecer en el campo del desarrollo web.
+                    </p> 
                 </div>
+                
             </div>
-            <div class="skills">
+            <div class="skills scroll-animation">
             <h2>Main Stack</h2>
             <div class="about-skills">
                     <article class="skills-card">
@@ -86,8 +90,10 @@
                     <i class="devicon-java-plain-wordmark colored tech-icon"></i>
                     <i class="devicon-sqldeveloper-plain colored tech-icon"></i>
                     <i class="devicon-mysql-plain-wordmark tech-icon"></i>
-                    <i class="devicon-github-original-wordmark tech-icon"></i>
-                    <i class="devicon-python-plain-wordmark colored tech-icon"></i>
+                    <i class="devicon-nodejs-plain-wordmark tech-icon"></i>
+
+          
+          
                 </article>
                 </div>
                 </div>
@@ -95,22 +101,37 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects">
+    <section id="projects" class="section scroll-animation">
         <div class="container">
             <header class="section-header">
                 <h2>Proyectos</h2>
             </header>
             <div class="project-grid">
                 <article class="project-card">
-                    <h3>PKM app</h3>
+                    <h3>Game Library</h3>
                     <p>
-                        Una aplicación ligera para la Gestión Personal del Conocimiento (PKM) 
-                        diseñada para almacenar, organizar y recuperar notas personales de manera eficiente. 
+                        Aplicación web para gestionar una biblioteca de videojuegos mediante React y una API REST propia.
+                        Tiene CRUD completo, búsqueda, filtros y gestión de datos persistentes con SQLite.
+
                     </p>
                     <!-- Add icons -->
-                    <p class="project-tags">HTML · CSS · JavaScript</p>   
-                    <a href="https://github.com/SofiaGutierrezA/PKM-final-version" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+                    <p class="project-tags">HTML · CSS · JavaScript · React · Node.js · SQLite</p> 
+                    <a href="https://github.com/SofiaGutierrezA/Game-library" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
                 </article>
+                <article class="project-card">
+                    <h3>eCommerce</h3>
+                    <p>
+                        E-commerce de calzado deportivo. El proyecto utiliza una arquitectura separada entre frontend y backend. 
+                        El frontend obtiene los productos mediante peticiones HTTP a la API, Express se comunica con SQLite. 
+                    </p>
+                    <!-- Add icons -->
+                    <p class="project-tags">HTML · CSS · JavaScript · Node.js · SQLite</p>   
+                    
+                    <a href="https://github.com/SofiaGutierrezA/ecommerce1-new" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+                </article>
+                
+            </div>
+            <div class="project-grid">
                 <article class="project-card">
                     <h3>To Do List</h3>
                     <p>
@@ -120,20 +141,23 @@
                     <p class="project-tags">Java</p>
                     <a href="https://github.com/SofiaGutierrezA/ToDoList" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
                 </article>
-                <article class="project-card">
-                    <h3>Project Three</h3>
+                 <article class="project-card">
+                    <h3>PKM app</h3>
                     <p>
-                        A short description of your project. You can link to the live site or GitHub repo.
+                        Una aplicación ligera para la Gestión Personal del Conocimiento (PKM) 
+                        diseñada para almacenar, organizar y recuperar notas personales de manera eficiente. 
                     </p>
-                    <p class="project-tags">UI / UX</p>
-                    <a href="https://github.com/SofiaGutierrezA" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+                    <!-- Add icons -->
+                    <p class="project-tags">HTML · CSS · JavaScript</p>   
+                    <a href="https://github.com/SofiaGutierrezA/PKM-final-version" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
+
                 </article>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section scroll-animation">
         <div class="container">
             <header class="section-header">
                 <h2>Contacto</h2>
@@ -141,35 +165,71 @@
             <div class="contact-grid">
                 <div class="contact-text">
                     <p>
-                       Si tienes alguna pregunta, consulta o feedback, no dudes en contactarme.
+                       Si quieres conocer más sobre mi perfil, mis proyectos, puedes ponerte en contacto conmigo. 
+                       Actualmente estoy buscando una oportunidad de prácticas en el ámbito del desarrollo web.
+
                     </p>
                     <ul class="contact-list">
                         <li><strong>Mi Email:</strong> sgutierrezari@gmail.com</li>
-                        <li><strong>Mi Ubicación:</strong> Girona, España</li>
+                        
                     </ul>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input id="name" type="text" placeholder="Tu nombre" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" placeholder="email@ejemplo.com" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" rows="4" placeholder="Tu mensaje" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary full-width">Enviar</button>
-                </form>
+                <form
+    class="contact-form"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+>
+    <input
+        type="hidden"
+        name="access_key"
+        value="844a375f-bffc-4516-aedc-e58240c3a071"
+    />
+
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Tu nombre"
+            required
+        />
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email@ejemplo.com"
+            required
+        />
+    </div>
+
+    <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tu mensaje"
+            required
+        ></textarea>
+    </div>
+
+    <button type="submit" class="btn primary full-width">
+        Enviar
+    </button>
+</form>
             </div>
         </div>
     </section>
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Sofia Gutiérrez Arriagada<br>
+Full-stack Developer</p>
         </div>
     </footer>
 
@@ -197,5 +257,6 @@
         // Set current year in footer
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
